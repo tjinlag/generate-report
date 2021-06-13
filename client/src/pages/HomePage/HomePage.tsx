@@ -16,7 +16,7 @@ const HomePage = () => {
       alert("Have error when generate report")
       return;
     }
-    setReport(data.report);
+    setReport(data);
   }
 
   return (
@@ -24,7 +24,7 @@ const HomePage = () => {
       {!!loading && <Loading />}
       {!report
         ? <ReportButton onClick={handleReportShow} />
-        : <ReportReader file={report} title="The Report" download />}
+        : <ReportReader data={report} title="The Report" download />}
     </div>
   );
 }

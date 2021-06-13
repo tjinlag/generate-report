@@ -52,6 +52,7 @@ def generate_report_api():
 
   return {
     'report': 'http://127.0.0.1:5000/assets/' + file_name,
+    'excel_file': 'http://127.0.0.1:5000/assets/' + 'Contact History Report (All) (5).xlsx',
   }
 
 @app.route('/assets/<path:path>')

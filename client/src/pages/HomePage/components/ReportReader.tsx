@@ -9,26 +9,31 @@ const options = {
 
 type IProps = {
   title?: string;
-  file: any;
+  data: null | {
+    report: string;
+    excel_file: string;
+  };
   download?: boolean;
 }
 
-const ReportReader = ({title, file, download = false} : IProps) => {
+const ReportReader = ({title, data, download = false} : IProps) => {
   const [numPages, setNumPages] = useState(null);
 
   const onDocumentLoadSuccess = ({ numPages: nextNumPages } : any) => {
     setNumPages(nextNumPages);
   }
 
-  const handleDownload = () => {
-    window.open(file);
+  const handleDownload = (fileName: string) => () => {
+    window.open(fileName);
   }
+
+  if (!data) return null;
 
   return (
     <div className="pdf-container">
       {!!title && <h1>{title}</h1>}
       <Document
-        file={file}
+        file={data.report}
         onLoadSuccess={onDocumentLoadSuccess}
         options={options}
       >
@@ -44,7 +49,8 @@ const ReportReader = ({title, file, download = false} : IProps) => {
           )
         }
       </Document>
-      {!!download && <Button title="Download" onClick={handleDownload} />}
+      {!!download && <Button title="Download Report" onClick={handleDownload(data.report)} />}
+      {!!download && <Button title="Download Excel File" onClick={handleDownload(data.excel_file)} />}
     </div>
   )
 }

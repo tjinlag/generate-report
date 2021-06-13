@@ -6,7 +6,7 @@ type IProps = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonEleme
 
 const Button = ({onClick, title, ...otherProps} : IProps) => {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div style={{ display: "flex", justifyContent: "center", marginTop: 10 }}>
       <button
         {...otherProps}
         type="button"
