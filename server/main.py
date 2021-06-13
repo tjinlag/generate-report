@@ -36,8 +36,8 @@ def create_pdf_report():
   ]
 
   image_list = []
-  for file_name in img_file_name_list:
-    img = Image.open(file_name)
+  for f_name in img_file_name_list:
+    img = Image.open(f_name)
     img.thumbnail(size)
     img = img.convert('RGB')
     image_list.append(img)
