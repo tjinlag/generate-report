@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.btn {
+  flex: 1;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 20px;
+  background-color: #fe718d;
+  color: aliceblue;
+  border: 1px solid #111;
+  box-shadow: 20px black;
+  cursor: pointer;
+}
+
+.loading-popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2)
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-image {
+  width: 100px;
+}
+
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}

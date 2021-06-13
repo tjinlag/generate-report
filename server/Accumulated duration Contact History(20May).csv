@@ -1,0 +1,13 @@
+index,Attendee01,Attendee02,Accumulated duration,Contact Category
+0,Mathilda Ng,Denzel Chen Jie,85,CLOSE
+1,Mathilda Ng,Kwek Jia Shen,180,CLOSE
+2,Mathilda Ng,Kelly Tan,80,CLOSE
+3,Kwek Jia Shen,Denzel Chen Jie,110,CLOSE
+4,Kwek Jia Shen,Mathilda Ng,180,CLOSE
+5,Kwek Jia Shen,Kelly Tan,111,CLOSE
+6,Kelly Tan,Denzel Chen Jie,85,CLOSE
+7,Kelly Tan,Mathilda Ng,80,CLOSE
+8,Kelly Tan,Kwek Jia Shen,111,CLOSE
+9,Denzel Chen Jie,Kelly Tan,85,CLOSE
+10,Denzel Chen Jie,Mathilda Ng,85,CLOSE
+11,Denzel Chen Jie,Kwek Jia Shen,110,CLOSE

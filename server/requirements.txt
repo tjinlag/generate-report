@@ -1,0 +1,13 @@
+pandas
+sklearn
+seaborn
+numpy
+matplotlib
+networkx
+pyvis
+xlrd>2.0
+openpyxl
+flask
+flask_restful
+flask_cors
+Pillow

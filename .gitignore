@@ -1,0 +1,5 @@
+.DS_Store
+/server/__pycache__
+/server/*.png
+/server/*.pdf
+/server/*.xlsx
